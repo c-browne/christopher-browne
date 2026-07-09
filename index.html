@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Office of Christopher A. Browne</title>
+  <meta name="description" content="The public office of Christopher A. Browne: scholarship, strategic diplomacy, Caribbean institutional development, real estate, hospitality, entitlement, and capital formation." />
+
   <style>
     :root{
       --navy:#06111f;
@@ -19,6 +22,7 @@
     }
 
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
 
     body{
       margin:0;
@@ -28,11 +32,7 @@
     }
 
     a{color:inherit}
-
-    .institutional-rule{
-      height:7px;
-      background:linear-gradient(90deg,var(--gold),#e1c98c,var(--gold));
-    }
+    .institutional-rule{height:7px;background:linear-gradient(90deg,var(--gold),#e1c98c,var(--gold));}
 
     header{
       background:#050b14;
@@ -45,577 +45,310 @@
       border-bottom:1px solid var(--line);
     }
 
-    .office-mark{
-      display:flex;
-      align-items:center;
-      gap:18px;
-    }
+    .office-mark{display:flex;align-items:center;gap:18px;}
 
     .seal{
-      width:68px;
-      height:68px;
-      border:1px solid var(--gold);
-      display:grid;
-      place-items:center;
-      font-family:Georgia,serif;
-      color:var(--gold2);
-      font-size:25px;
-      letter-spacing:-.04em;
+      width:68px;height:68px;border:1px solid var(--gold);
+      display:grid;place-items:center;font-family:Georgia,serif;
+      color:var(--gold2);font-size:25px;letter-spacing:-.04em;
       background:rgba(255,255,255,.03);
     }
 
     .office-mark h1{
-      margin:0;
-      font-family:Georgia,serif;
-      font-weight:400;
-      font-size:22px;
-      letter-spacing:.08em;
-      text-transform:uppercase;
+      margin:0;font-family:Georgia,serif;font-weight:400;
+      font-size:22px;letter-spacing:.08em;text-transform:uppercase;
     }
 
     .office-mark p{
-      margin:6px 0 0;
-      color:var(--gold2);
-      font-size:11px;
-      letter-spacing:.22em;
-      text-transform:uppercase;
+      margin:6px 0 0;color:var(--gold2);font-size:11px;
+      letter-spacing:.22em;text-transform:uppercase;
     }
 
-    nav{
-      display:flex;
-      flex-wrap:wrap;
-      gap:22px;
-      justify-content:flex-end;
-    }
+    nav{display:flex;flex-wrap:wrap;gap:22px;justify-content:flex-end;}
 
     nav a{
-      color:var(--ivory);
-      text-decoration:none;
-      font-size:11px;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-      opacity:.9;
+      color:var(--ivory);text-decoration:none;font-size:11px;
+      letter-spacing:.14em;text-transform:uppercase;opacity:.9;
     }
 
+    nav a:hover{color:var(--gold2)}
+
     .hero{
-      position:relative;
-      color:var(--ivory);
+      position:relative;color:var(--ivory);
       background:
         linear-gradient(90deg,rgba(6,17,31,.98),rgba(6,17,31,.91) 48%,rgba(6,17,31,.76)),
         radial-gradient(circle at 78% 24%,rgba(184,148,77,.20),transparent 30%),
         linear-gradient(135deg,#06111f,#102846 58%,#536b83 150%);
-      padding:92px 6vw 96px;
-      overflow:hidden;
+      padding:92px 6vw 96px;overflow:hidden;
     }
 
     .hero:before{
-      content:"";
-      position:absolute;
-      inset:0;
+      content:"";position:absolute;inset:0;
       background:
         linear-gradient(rgba(255,255,255,.033) 1px, transparent 1px),
         linear-gradient(90deg,rgba(255,255,255,.026) 1px, transparent 1px);
-      background-size:72px 72px;
-      opacity:.45;
+      background-size:72px 72px;opacity:.45;
     }
 
     .hero:after{
-      content:"";
-      position:absolute;
-      right:-80px;
-      bottom:-120px;
-      width:540px;
-      height:540px;
-      border:1px solid rgba(211,179,111,.32);
+      content:"";position:absolute;right:-80px;bottom:-120px;
+      width:540px;height:540px;border:1px solid rgba(211,179,111,.32);
       border-radius:50%;
       box-shadow:0 0 0 56px rgba(211,179,111,.04),0 0 0 112px rgba(211,179,111,.025);
     }
 
-    .hero-inner{
-      position:relative;
-      max-width:1180px;
-      margin:0 auto;
-      z-index:1;
-    }
+    .hero-inner{position:relative;max-width:1180px;margin:0 auto;z-index:1;}
 
     .eyebrow{
-      color:var(--gold2);
-      text-transform:uppercase;
-      letter-spacing:.24em;
-      font-size:12px;
-      margin-bottom:24px;
+      color:var(--gold2);text-transform:uppercase;letter-spacing:.24em;
+      font-size:12px;margin-bottom:24px;
     }
 
     .hero h2{
-      margin:0;
-      max-width:980px;
-      font-family:Georgia,'Times New Roman',serif;
-      font-weight:400;
-      font-size:clamp(48px,7.4vw,96px);
-      line-height:.96;
+      margin:0;max-width:980px;font-family:Georgia,'Times New Roman',serif;
+      font-weight:400;font-size:clamp(48px,7.4vw,96px);line-height:.96;
     }
 
     .hero h2 span{color:var(--gold2)}
 
     .hero-lede{
-      max-width:820px;
-      margin:30px 0 34px;
-      color:#e9dfcf;
-      font-size:21px;
-      line-height:1.62;
+      max-width:820px;margin:30px 0 34px;color:#e9dfcf;
+      font-size:21px;line-height:1.62;
     }
 
     .office-statement{
-      max-width:880px;
-      padding:24px 26px;
-      border-left:3px solid var(--gold);
-      background:rgba(255,255,255,.055);
-      color:#ded3c1;
-      line-height:1.7;
-      font-size:16px;
+      max-width:880px;padding:24px 26px;border-left:3px solid var(--gold);
+      background:rgba(255,255,255,.055);color:#ded3c1;
+      line-height:1.7;font-size:16px;
     }
 
-    .buttons{
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-      margin-top:34px;
-    }
+    .buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;}
 
     .btn{
-      display:inline-flex;
-      text-decoration:none;
-      padding:14px 19px;
-      border:1px solid var(--line);
-      text-transform:uppercase;
-      letter-spacing:.13em;
-      font-size:12px;
+      display:inline-flex;text-decoration:none;padding:14px 19px;
+      border:1px solid var(--line);text-transform:uppercase;
+      letter-spacing:.13em;font-size:12px;transition:.2s ease;
     }
+
+    .btn:hover{transform:translateY(-1px);opacity:.92}
 
     .btn.primary{
       background:linear-gradient(135deg,var(--gold),var(--gold2));
-      color:var(--navy);
-      border-color:transparent;
-      font-weight:700;
+      color:var(--navy);border-color:transparent;font-weight:700;
     }
 
-    .btn.secondary{
-      color:var(--ivory);
-    }
+    .btn.secondary{color:var(--ivory)}
 
     .mission-strip{
-      background:var(--ivory);
-      padding:28px 6vw;
-      border-bottom:1px solid var(--line);
+      background:var(--ivory);padding:28px 6vw;border-bottom:1px solid var(--line);
     }
 
     .mission-strip p{
-      max-width:1040px;
-      margin:0 auto;
-      text-align:center;
-      font-family:Georgia,serif;
-      color:var(--navy);
-      font-size:25px;
-      line-height:1.38;
+      max-width:1040px;margin:0 auto;text-align:center;
+      font-family:Georgia,serif;color:var(--navy);
+      font-size:25px;line-height:1.38;
     }
 
     .focus-band{
-      background:#fffdf8;
-      border-bottom:1px solid var(--line);
-      padding:26px 6vw;
+      background:#fffdf8;border-bottom:1px solid var(--line);padding:26px 6vw;
     }
 
     .focus-inner{
-      max-width:1180px;
-      margin:0 auto;
-      display:grid;
-      grid-template-columns:180px 1fr;
-      gap:28px;
-      align-items:center;
+      max-width:1180px;margin:0 auto;display:grid;
+      grid-template-columns:180px 1fr;gap:28px;align-items:center;
     }
 
     .focus-label{
-      color:var(--gold);
-      font-size:11px;
-      letter-spacing:.2em;
-      text-transform:uppercase;
-      font-weight:700;
+      color:var(--gold);font-size:11px;letter-spacing:.2em;
+      text-transform:uppercase;font-weight:700;
     }
 
-    .focus-list{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
+    .focus-list{display:flex;flex-wrap:wrap;gap:10px;}
 
     .focus-list span{
-      border:1px solid rgba(184,148,77,.38);
-      padding:9px 12px;
-      font-size:12px;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:var(--navy);
-      background:#faf7ef;
+      border:1px solid rgba(184,148,77,.38);padding:9px 12px;
+      font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--navy);background:#faf7ef;
     }
 
-    section{
-      padding:76px 6vw;
-    }
-
-    .inner{
-      max-width:1180px;
-      margin:0 auto;
-    }
+    section{padding:76px 6vw}
+    .inner{max-width:1180px;margin:0 auto;}
 
     .section-head{
-      display:grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap:56px;
-      align-items:end;
-      margin-bottom:40px;
+      display:grid;grid-template-columns:.9fr 1.1fr;
+      gap:56px;align-items:end;margin-bottom:40px;
     }
 
     .section-kicker{
-      color:var(--gold);
-      text-transform:uppercase;
-      letter-spacing:.22em;
-      font-size:12px;
-      margin-bottom:14px;
+      color:var(--gold);text-transform:uppercase;letter-spacing:.22em;
+      font-size:12px;margin-bottom:14px;
     }
 
     .section-head h3{
-      margin:0;
-      font-family:Georgia,serif;
-      color:var(--navy);
-      font-size:42px;
-      line-height:1.06;
-      font-weight:400;
+      margin:0;font-family:Georgia,serif;color:var(--navy);
+      font-size:42px;line-height:1.06;font-weight:400;
     }
 
-    .section-head p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.72;
-      font-size:16px;
-    }
+    .section-head p{margin:0;color:var(--muted);line-height:1.72;font-size:16px;}
 
     .office-grid{
-      display:grid;
-      grid-template-columns:1fr .78fr;
-      gap:30px;
-      align-items:stretch;
+      display:grid;grid-template-columns:1fr .78fr;gap:30px;align-items:stretch;
     }
 
-    .text-card,.portrait-card{
-      border:1px solid var(--line);
-      background:var(--white);
-      padding:34px;
-    }
+    .text-card,.portrait-card{border:1px solid var(--line);background:var(--white);padding:34px;}
 
-    .text-card p{
-      margin:0 0 18px;
-      color:#37332f;
-      line-height:1.74;
-    }
-
+    .text-card p{margin:0 0 18px;color:#37332f;line-height:1.74;}
     .text-card p:last-child{margin-bottom:0}
 
     .credential-note{
-      margin-top:24px;
-      padding:22px;
-      border-left:3px solid var(--gold);
-      background:#faf7ef;
-      color:var(--navy);
-      line-height:1.68;
-      font-size:15px;
+      margin-top:24px;padding:22px;border-left:3px solid var(--gold);
+      background:#faf7ef;color:var(--navy);line-height:1.68;font-size:15px;
     }
 
     .portrait-card{
-      padding:16px;
-      background:#f6f0e5;
+      padding:16px;background:#f6f0e5;display:flex;flex-direction:column;gap:14px;
     }
 
     .portrait-card img{
-      display:block;
-      width:100%;
-      height:100%;
-      min-height:430px;
-      object-fit:cover;
-      object-position:center top;
+      display:block;width:100%;min-height:430px;max-height:620px;
+      object-fit:cover;object-position:center top;
       border:1px solid rgba(184,148,77,.30);
       filter:saturate(.94) contrast(1.02);
     }
 
     .portrait-caption{
-      margin:12px 4px 0;
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.5;
+      margin:0;padding:10px 8px 2px;color:var(--navy);
+      font-size:13px;line-height:1.5;border-top:1px solid rgba(184,148,77,.24);
+      letter-spacing:.03em;
     }
 
-    .renaissance{
-      background:linear-gradient(135deg,var(--navy),#10233a);
-      color:var(--ivory);
-    }
-
+    .renaissance{background:linear-gradient(135deg,var(--navy),#10233a);color:var(--ivory);}
     .renaissance .section-head h3{color:var(--ivory)}
     .renaissance .section-head p{color:#d9d0c0}
 
     .thesis-grid{
-      display:grid;
-      grid-template-columns:repeat(5,1fr);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
+      display:grid;grid-template-columns:repeat(5,1fr);
+      border-top:1px solid var(--line);border-bottom:1px solid var(--line);
     }
 
     .thesis-item{
-      padding:28px 22px;
-      border-right:1px solid var(--line);
-      background:rgba(255,255,255,.035);
-      min-height:210px;
+      padding:28px 22px;border-right:1px solid var(--line);
+      background:rgba(255,255,255,.035);min-height:210px;
     }
 
     .thesis-item:last-child{border-right:0}
-
-    .thesis-item span{
-      color:var(--gold2);
-      font-family:Georgia,serif;
-      font-size:24px;
-    }
+    .thesis-item span{color:var(--gold2);font-family:Georgia,serif;font-size:24px;}
 
     .thesis-item h4{
-      font-family:Georgia,serif;
-      font-weight:400;
-      font-size:21px;
-      margin:18px 0 12px;
-      color:var(--ivory);
+      font-family:Georgia,serif;font-weight:400;font-size:21px;
+      margin:18px 0 12px;color:var(--ivory);
     }
 
-    .thesis-item p{
-      margin:0;
-      color:#d8cdbc;
-      line-height:1.65;
-      font-size:14px;
-    }
+    .thesis-item p{margin:0;color:#d8cdbc;line-height:1.65;font-size:14px;}
 
-    .papers-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
-    }
+    .papers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 
     .paper-card{
-      background:var(--white);
-      border:1px solid var(--line);
-      padding:28px;
-      min-height:270px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
+      background:var(--white);border:1px solid var(--line);padding:28px;
+      min-height:270px;display:flex;flex-direction:column;justify-content:space-between;
     }
 
     .paper-card .label{
-      color:var(--gold);
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      font-size:11px;
-      margin-bottom:18px;
+      color:var(--gold);text-transform:uppercase;letter-spacing:.18em;
+      font-size:11px;margin-bottom:18px;
     }
 
     .paper-card h4{
-      margin:0 0 14px;
-      font-family:Georgia,serif;
-      font-weight:400;
-      color:var(--navy);
-      font-size:25px;
-      line-height:1.18;
+      margin:0 0 14px;font-family:Georgia,serif;font-weight:400;
+      color:var(--navy);font-size:25px;line-height:1.18;
     }
 
-    .paper-card p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.66;
-      font-size:14px;
-    }
+    .paper-card p{margin:0;color:var(--muted);line-height:1.66;font-size:14px;}
 
     .paper-card a{
-      margin-top:24px;
-      color:var(--navy);
-      text-decoration:none;
-      border-bottom:1px solid var(--gold);
-      width:max-content;
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.14em;
+      margin-top:24px;color:var(--navy);text-decoration:none;
+      border-bottom:1px solid var(--gold);width:max-content;
+      font-size:12px;text-transform:uppercase;letter-spacing:.14em;
     }
 
     .initiatives{
-      background:#f3eee3;
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
+      background:#f3eee3;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
     }
 
-    .initiative-list{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:18px;
-    }
+    .initiative-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
 
     .initiative{
-      background:var(--white);
-      border:1px solid var(--line);
-      padding:26px;
-      display:grid;
-      grid-template-columns:140px 1fr;
-      gap:24px;
-      align-items:start;
+      background:var(--white);border:1px solid var(--line);padding:26px;
+      display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:start;
     }
 
     .initiative .type{
-      color:var(--gold);
-      font-size:11px;
-      letter-spacing:.18em;
-      text-transform:uppercase;
-      line-height:1.5;
+      color:var(--gold);font-size:11px;letter-spacing:.18em;
+      text-transform:uppercase;line-height:1.5;
     }
 
     .initiative h4{
-      margin:0 0 10px;
-      font-family:Georgia,serif;
-      font-size:24px;
-      font-weight:400;
-      color:var(--navy);
+      margin:0 0 10px;font-family:Georgia,serif;
+      font-size:24px;font-weight:400;color:var(--navy);
     }
 
-    .initiative p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.65;
-      font-size:14px;
-    }
+    .initiative p{margin:0;color:var(--muted);line-height:1.65;font-size:14px;}
 
-    .two-col{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:34px;
-    }
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px;}
 
-    .list-block{
-      background:var(--white);
-      border:1px solid var(--line);
-      padding:34px;
-    }
+    .list-block{background:var(--white);border:1px solid var(--line);padding:34px;}
 
     .list-block h3{
-      margin:0 0 22px;
-      font-family:Georgia,serif;
-      font-weight:400;
-      color:var(--navy);
-      font-size:32px;
+      margin:0 0 22px;font-family:Georgia,serif;
+      font-weight:400;color:var(--navy);font-size:32px;
     }
 
-    .list-block ul{
-      margin:0;
-      padding:0;
-      list-style:none;
-    }
+    .list-block ul{margin:0;padding:0;list-style:none;}
 
     .list-block li{
-      padding:17px 0;
-      border-top:1px solid rgba(184,148,77,.22);
-      color:#36322e;
-      line-height:1.55;
+      padding:17px 0;border-top:1px solid rgba(184,148,77,.22);
+      color:#36322e;line-height:1.55;
     }
 
-    .list-block li strong{
-      display:block;
-      color:var(--navy);
-      margin-bottom:4px;
-      font-weight:700;
-    }
+    .list-block li strong{display:block;color:var(--navy);margin-bottom:4px;font-weight:700;}
 
-    .platform{
-      background:linear-gradient(135deg,#07111f,#0d1d31);
-      color:var(--ivory);
-    }
+    .platform{background:linear-gradient(135deg,#07111f,#0d1d31);color:var(--ivory);}
 
     .platform-card{
-      border:1px solid var(--line);
-      padding:42px;
+      border:1px solid var(--line);padding:42px;
       background:rgba(255,255,255,.045);
-      display:grid;
-      grid-template-columns:1fr auto;
-      gap:30px;
-      align-items:center;
+      display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;
     }
 
     .platform-card h3{
-      margin:0 0 14px;
-      font-family:Georgia,serif;
-      font-weight:400;
-      font-size:42px;
+      margin:0 0 14px;font-family:Georgia,serif;font-weight:400;font-size:42px;
     }
 
-    .platform-card p{
-      margin:0;
-      max-width:780px;
-      color:#d9d0c0;
-      line-height:1.72;
-    }
+    .platform-card p{margin:0;max-width:780px;color:#d9d0c0;line-height:1.72;}
 
     .disclaimer{
-      background:#050b14;
-      color:#cfc6b8;
-      border-top:1px solid var(--line);
-      padding:22px 6vw;
-      font-size:12px;
-      line-height:1.6;
+      background:#050b14;color:#cfc6b8;border-top:1px solid var(--line);
+      padding:22px 6vw;font-size:12px;line-height:1.6;
     }
 
-    .disclaimer p{
-      max-width:1180px;
-      margin:0 auto;
-      color:#cfc6b8;
-    }
+    .disclaimer p{max-width:1180px;margin:0 auto;color:#cfc6b8;}
 
     footer{
-      background:#050b14;
-      color:#cfc6b8;
-      padding:40px 6vw;
+      background:#050b14;color:#cfc6b8;padding:40px 6vw;
       border-top:1px solid rgba(184,148,77,.18);
     }
 
     .footer-inner{
-      max-width:1180px;
-      margin:0 auto;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:28px;
-      flex-wrap:wrap;
+      max-width:1180px;margin:0 auto;display:flex;
+      justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;
     }
 
-    footer strong{
-      color:var(--gold2);
-      font-family:Georgia,serif;
-      font-weight:400;
-      font-size:20px;
-    }
-
-    footer p{
-      margin:6px 0 0;
-      font-size:13px;
-      color:#cfc6b8;
-    }
+    footer strong{color:var(--gold2);font-family:Georgia,serif;font-weight:400;font-size:20px;}
+    footer p{margin:6px 0 0;font-size:13px;color:#cfc6b8;}
 
     footer a{
-      color:var(--ivory);
-      text-decoration:none;
-      border-bottom:1px solid var(--gold);
-      padding-bottom:3px;
-      font-size:12px;
-      text-transform:uppercase;
-      letter-spacing:.14em;
+      color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--gold);
+      padding-bottom:3px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;
     }
 
     @media(max-width:1000px){
@@ -628,9 +361,11 @@
       .papers-grid,.initiative-list{grid-template-columns:1fr}
       .initiative{grid-template-columns:1fr}
       .hero{padding-top:70px}
+      .portrait-card img{min-height:360px}
     }
   </style>
 </head>
+
 <body>
   <div class="institutional-rule"></div>
 
@@ -642,6 +377,7 @@
         <p>Scholarship · Strategic Diplomacy · Institutional Development</p>
       </div>
     </div>
+
     <nav>
       <a href="#office">Office</a>
       <a href="#framework">Framework</a>
@@ -657,15 +393,18 @@
       <div class="hero-inner">
         <div class="eyebrow">Caribbean Development · Governance · Real Estate · Capital Formation</div>
         <h2>Building Order. Advancing Opportunity<span>.</span></h2>
+
         <p class="hero-lede">
           A public office for scholarship, strategic diplomacy, and Caribbean institutional development.
         </p>
+
         <div class="office-statement">
           The Office exists to advance scholarship, strategic diplomacy, and institutional development in support of a more competitive, investable, and resilient Caribbean.
         </div>
+
         <div class="buttons">
-          <a class="btn primary" href="#framework">Explore the Framework</a>
-          <a class="btn secondary" href="#platform">Visit The Buckler Group</a>
+          <a class="btn primary" href="https://thebucklergroup.com/caribbean-renaissance" target="_blank" rel="noopener">Read the Caribbean Renaissance™ Framework</a>
+          <a class="btn secondary" href="https://thebucklergroup.com" target="_blank" rel="noopener">Visit The Buckler Group</a>
         </div>
       </div>
     </section>
@@ -695,6 +434,7 @@
             <div class="section-kicker">The Office</div>
             <h3>A civic and intellectual platform for Caribbean development.</h3>
           </div>
+
           <p>
             The Office of Christopher A. Browne serves as the personal reference point for a body of work focused on Caribbean real estate, hospitality, entitlement, diaspora capital, public-private coordination, and institutional strategy.
           </p>
@@ -705,9 +445,11 @@
             <p>
               Christopher A. Browne is a Caribbean-American real estate executive, scholar-practitioner, and institution builder working at the intersection of development strategy, regional diplomacy, and long-term capital formation.
             </p>
+
             <p>
               His work is organized around a central conviction: the Caribbean must be understood not only as a tourism market, but as a civilization-scale development platform requiring order, governance, investable institutions, and serious public-private execution.
             </p>
+
             <p>
               The Office publishes research, strategic papers, and public addresses while supporting executive dialogue on Caribbean development, real estate, hospitality, and institutional strategy.
             </p>
@@ -718,7 +460,7 @@
           </div>
 
           <aside class="portrait-card">
-            <img src="Christopher Browne _ Outdoor-41 (1).webp" alt="Christopher A. Browne formal portrait">
+            <img src="assets/images/portraits/christopher-browne-office.jpg" alt="Christopher A. Browne formal portrait">
             <p class="portrait-caption">Christopher A. Browne</p>
           </aside>
         </div>
@@ -732,6 +474,7 @@
             <div class="section-kicker">Intellectual Centerpiece</div>
             <h3>The Caribbean Renaissance™ Framework</h3>
           </div>
+
           <p>
             A regional development thesis focused on order, investment readiness, hospitality-led growth, institutional coordination, and disciplined participation by the Caribbean diaspora.
           </p>
@@ -743,26 +486,35 @@
             <h4>Order</h4>
             <p>Planning, land-use, approvals, and governance systems that reduce uncertainty for serious development.</p>
           </article>
+
           <article class="thesis-item">
             <span>02</span>
             <h4>Place</h4>
             <p>Hospitality, mixed-use districts, destination strategy, and civic infrastructure as engines of competitiveness.</p>
           </article>
+
           <article class="thesis-item">
             <span>03</span>
             <h4>Institutions</h4>
             <p>Platforms that coordinate governments, investment agencies, universities, developers, and financial institutions.</p>
           </article>
+
           <article class="thesis-item">
             <span>04</span>
             <h4>Diaspora</h4>
             <p>A knowledge and capital system that can move beyond sentiment into governed participation.</p>
           </article>
+
           <article class="thesis-item">
             <span>05</span>
             <h4>Capital Formation</h4>
             <p>Converting regional opportunity into credible, investable, institutionally legible propositions.</p>
           </article>
+        </div>
+
+        <div class="buttons">
+          <a class="btn primary" href="https://thebucklergroup.com/caribbean-renaissance" target="_blank" rel="noopener">Read Full Framework</a>
+          <a class="btn secondary" href="#papers">View Office Papers</a>
         </div>
       </div>
     </section>
@@ -774,6 +526,7 @@
             <div class="section-kicker">Office Papers</div>
             <h3>Research notes, strategic essays, and policy-facing arguments.</h3>
           </div>
+
           <p>
             Office Papers are intended to function as durable reference documents: concise, serious, and suitable for circulation among government, academic, investment, and institutional audiences.
           </p>
@@ -786,7 +539,7 @@
               <h4>Why the Caribbean Renaissance™ Matters</h4>
               <p>A foundational statement on Caribbean development, institutional renewal, and the need for a more serious regional investment architecture.</p>
             </div>
-            <a href="#">Read paper</a>
+            <a href="https://thebucklergroup.com/caribbean-renaissance" target="_blank" rel="noopener">Read paper</a>
           </article>
 
           <article class="paper-card">
@@ -795,7 +548,7 @@
               <h4>Entitlement as Economic Infrastructure</h4>
               <p>A working thesis on zoning, approvals, planning credibility, and why entitlement clarity is essential to institutional capital.</p>
             </div>
-            <a href="#">In development</a>
+            <a href="https://thebucklergroup.com/contact" target="_blank" rel="noopener">In development</a>
           </article>
 
           <article class="paper-card">
@@ -804,7 +557,7 @@
               <h4>Diaspora Capital and Caribbean Order</h4>
               <p>A strategic note on converting diaspora affinity into governed participation, capital discipline, and long-term development capacity.</p>
             </div>
-            <a href="#">In development</a>
+            <a href="https://thebucklergroup.com/contact" target="_blank" rel="noopener">In development</a>
           </article>
         </div>
       </div>
@@ -817,6 +570,7 @@
             <div class="section-kicker">Current Initiatives</div>
             <h3>Active platforms for convening, scholarship, and institutional development.</h3>
           </div>
+
           <p>
             Current initiatives support the long-term architecture of the Caribbean Renaissance™ through convening, research, public engagement, and institutional partnerships.
           </p>
@@ -826,7 +580,7 @@
           <article class="initiative">
             <div class="type">Framework</div>
             <div>
-              <h4>Caribbean Renaissance™ Framework</h4>
+              <h4><a href="https://thebucklergroup.com/caribbean-renaissance" target="_blank" rel="noopener">Caribbean Renaissance™ Framework</a></h4>
               <p>The organizing thesis for regional development, public-private coordination, hospitality, entitlement, and diaspora participation.</p>
             </div>
           </article>
@@ -834,23 +588,23 @@
           <article class="initiative">
             <div class="type">Convening</div>
             <div>
-              <h4>Executive Strategic Sessions</h4>
+              <h4><a href="https://thebucklergroup.com/strategic-sessions" target="_blank" rel="noopener">Executive Strategic Sessions</a></h4>
               <p>Invite-only jurisdictional dialogues engaging government, investment promotion agencies, developers, universities, and institutional audiences.</p>
             </div>
           </article>
 
           <article class="initiative">
-            <div class="type">Scholarship</div>
+            <div class="type">Membership</div>
             <div>
-              <h4>Research & Teaching</h4>
-              <p>Real estate, hospitality, planning, Caribbean development, capital formation, and the institutional architecture of regional growth.</p>
+              <h4><a href="https://thebucklergroup.com/charter-membership" target="_blank" rel="noopener">Charter Membership</a></h4>
+              <p>A curated pathway for serious professionals and institutions seeking deeper participation in the Caribbean Renaissance™ ecosystem.</p>
             </div>
           </article>
 
           <article class="initiative">
             <div class="type">Partnerships</div>
             <div>
-              <h4>Institutional Partnerships</h4>
+              <h4><a href="https://thebucklergroup.com/contact" target="_blank" rel="noopener">Institutional Partnerships</a></h4>
               <p>Relationships with academic, civic, diaspora, industry, and development stakeholders aligned around serious Caribbean execution.</p>
             </div>
           </article>
@@ -863,7 +617,7 @@
         <div class="list-block">
           <h3>Current Appointments</h3>
           <ul>
-            <li><strong>Founder & CEO</strong>The Buckler Group</li>
+            <li><strong>Founder & CEO</strong><a href="https://thebucklergroup.com" target="_blank" rel="noopener">The Buckler Group</a></li>
             <li><strong>Board Member</strong>Cornell Hotel Society — New York Chapter</li>
             <li><strong>Education Committee Chair</strong>African American Real Estate Professionals of New York</li>
           </ul>
@@ -888,13 +642,13 @@
             The Buckler Group is the institutional execution platform connected to this body of work, advancing advisory, convening, strategic engagement, and Caribbean development initiatives.
           </p>
         </div>
-        <a class="btn primary" href="#">Visit Platform</a>
+        <a class="btn primary" href="https://thebucklergroup.com" target="_blank" rel="noopener">Visit The Buckler Group</a>
       </div>
     </section>
 
     <div class="disclaimer">
       <p>
-        This site is a personal office and intellectual archive. Institutional engagements, advisory work, convenings, and platform activity are conducted through The Buckler Group.
+        This site is a personal office and intellectual archive. Institutional engagements, advisory work, convenings, and platform activity are conducted through <a href="https://thebucklergroup.com" target="_blank" rel="noopener">The Buckler Group</a>.
       </p>
     </div>
   </main>
@@ -905,7 +659,8 @@
         <strong>Office of Christopher A. Browne</strong>
         <p>Scholarship · Strategic Diplomacy · Institutional Development</p>
       </div>
-      <a href="#">Professional Inquiry</a>
+
+      <a href="https://thebucklergroup.com/contact" target="_blank" rel="noopener">Professional Inquiry</a>
     </div>
   </footer>
 </body>
