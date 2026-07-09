@@ -351,6 +351,96 @@
       padding-bottom:3px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;
     }
 
+
+    .office-footer{
+      background:#050b14;
+      color:#d7cec0;
+      padding:70px 6vw 25px;
+      border-top:1px solid rgba(184,148,77,.20);
+    }
+
+    .footer-container{
+      max-width:1180px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr 1fr;
+      gap:60px;
+    }
+
+    .footer-brand h2{
+      font-family:Georgia,serif;
+      color:#fff;
+      font-weight:400;
+      margin:0 0 12px;
+      font-size:28px;
+      line-height:1.2;
+    }
+
+    .footer-tagline{
+      color:var(--gold2);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:11px;
+      margin:0 0 22px;
+    }
+
+    .footer-description{
+      line-height:1.8;
+      color:#bdb6ab;
+      max-width:430px;
+      margin:0;
+      font-size:14px;
+    }
+
+    .footer-column{
+      display:flex;
+      flex-direction:column;
+    }
+
+    .footer-column h4{
+      color:var(--gold2);
+      margin:0 0 20px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:12px;
+    }
+
+    .footer-column a{
+      color:#d7cec0;
+      text-decoration:none;
+      margin-bottom:12px;
+      transition:.25s;
+      font-size:14px;
+      line-height:1.4;
+    }
+
+    .footer-column a:hover{
+      color:#ffffff;
+    }
+
+    .footer-bottom{
+      max-width:1180px;
+      margin:60px auto 0;
+      padding-top:25px;
+      border-top:1px solid rgba(255,255,255,.08);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+      font-size:13px;
+      color:#a79d91;
+    }
+
+    .footer-bottom p{
+      margin:0;
+      line-height:1.6;
+    }
+
+    .footer-bottom a{
+      color:var(--gold2);
+      text-decoration:none;
+    }
+
     @media(max-width:1000px){
       header{flex-direction:column;align-items:flex-start}
       nav{justify-content:flex-start}
@@ -362,6 +452,9 @@
       .initiative{grid-template-columns:1fr}
       .hero{padding-top:70px}
       .portrait-card img{min-height:360px}
+      .footer-container{grid-template-columns:1fr;gap:34px}
+      .footer-bottom{display:block}
+      .footer-bottom p{margin-bottom:14px}
     }
   </style>
 </head>
@@ -460,7 +553,7 @@
           </div>
 
           <aside class="portrait-card">
-            <img src="Christopher Browne _ Outdoor-41 (1).webp" alt="Christopher A. Browne formal portrait">
+            <img src="assets/images/portraits/christopher-browne-office.jpg" alt="Christopher A. Browne formal portrait">
             <p class="portrait-caption">Christopher A. Browne</p>
           </aside>
         </div>
@@ -539,7 +632,7 @@
               <h4>Why the Caribbean Renaissance™ Matters</h4>
               <p>A foundational statement on Caribbean development, institutional renewal, and the need for a more serious regional investment architecture.</p>
             </div>
-            <a href="https://thebucklergroup.com/caribbean-renaissance" target="_blank" rel="noopener">Read paper</a>
+            <a href="https://thebucklergroup.com/caribbean-renaissance-insights" target="_blank" rel="noopener">Read Office Paper</a>
           </article>
 
           <article class="paper-card">
@@ -653,15 +746,47 @@
     </div>
   </main>
 
-  <footer id="contact">
-    <div class="footer-inner">
-      <div>
-        <strong>Office of Christopher A. Browne</strong>
-        <p>Scholarship · Strategic Diplomacy · Institutional Development</p>
+  <footer id="contact" class="office-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Office of Christopher A. Browne</h2>
+        <p class="footer-tagline">Scholarship • Strategic Diplomacy • Institutional Development</p>
+        <p class="footer-description">
+          Advancing scholarship, executive dialogue, and institutional development in support of a more competitive, investable, and resilient Caribbean.
+        </p>
       </div>
 
-      <a href="https://thebucklergroup.com/contact" target="_blank" rel="noopener">Professional Inquiry</a>
+      <div class="footer-column">
+        <h4>Office</h4>
+        <a href="#office">About the Office</a>
+        <a href="#papers">Office Papers</a>
+        <a href="#initiatives">Current Initiatives</a>
+        <a href="#appointments">Appointments</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>The Buckler Group</h4>
+        <a href="https://thebucklergroup.com" target="_blank" rel="noopener">Institutional Platform</a>
+        <a href="https://thebucklergroup.com/caribbean-renaissance" target="_blank" rel="noopener">Caribbean Renaissance™</a>
+        <a href="https://thebucklergroup.com/strategic-sessions" target="_blank" rel="noopener">Strategic Sessions</a>
+        <a href="https://thebucklergroup.com/charter-membership" target="_blank" rel="noopener">Charter Membership</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <a href="https://thebucklergroup.com/contact" target="_blank" rel="noopener">Professional Inquiry</a>
+        <a href="https://www.linkedin.com/in/christopherbrowne" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Office of Christopher A. Browne. All Rights Reserved.</p>
+      <p>
+        Institutional engagements are conducted through
+        <a href="https://thebucklergroup.com" target="_blank" rel="noopener">The Buckler Group</a>.
+      </p>
     </div>
   </footer>
+
 </body>
 </html>
